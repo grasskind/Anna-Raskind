@@ -1,3 +1,4 @@
+Welcome to Anitim Photography! (Add description here...)
 <head>
   <link rel = "stylesheet" type = "text/css" href = "css/style.css" />
 </head>
