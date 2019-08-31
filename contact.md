@@ -3,8 +3,8 @@ title: Contact
 layout: my_default
 ---
 
-### Phone Number: 
-906-231-7042
+### Facebook: 
+[Anna Raskind](https://www.facebook.com/profile.php?id=100009322834331)
 
 ### Email:
 anna.raskind@gmail.com
