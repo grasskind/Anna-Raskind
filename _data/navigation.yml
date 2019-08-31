@@ -1,8 +1,8 @@
 - name: Home
   link: /
 - name: About
-  link: /anitim-photography/about.html
+  link: about.html
 - name: Gallery
-  link: /gallery.html
+  link: gallery.html
 - name: Contact
-  link: /contact.html
+  link: contact.html
