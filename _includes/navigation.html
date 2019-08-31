@@ -1,9 +1,9 @@
-<nav>
+<ul class = "navigation-bar">
     {% for item in site.data.navigation %}
-      <li class="fork">
-        <a href="{{ item.link }}" {% if page.url contains item.link or (item.link == "index.html" and page.title == "Home") %}style="color: black;"{% endif %}>
+      <li class="navigation-list"></li>
+        <a href="{{ item.link }}" {% if page.url contains item.link or (item.link == "index.html" and page.title == "Home") %}style="color: black;"{% endif %} class = "navigation-link">
           {{ item.name }}
         </a>
       </li>
     {% endfor %}
-</nav>
+    </ul>

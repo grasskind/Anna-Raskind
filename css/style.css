@@ -1,3 +1,22 @@
+/* Navigation */
+a.navigation-link{
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li.navigation-list {
+  display: inline;
+}
+ul.navigation-bar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+}
+
+/* Slideshow */
 .bss-slides{
   position: relative;
   display: block; 
@@ -139,3 +158,4 @@ figcaption {
     -webkit-background-size: contain;
     background-size: contain;
 }
+
