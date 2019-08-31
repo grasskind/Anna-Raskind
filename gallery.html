@@ -1,0 +1,51 @@
+---
+title: Gallery
+layout: my_default
+images_per_col: 16
+num_cols: 2
+---
+
+<style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        body {
+          margin: 0;
+          font-family: Arial;
+        }
+        
+        .header {
+          text-align: center;
+          padding: 32px;
+        }
+        
+        /* Create two equal columns that floats next to each other */
+        .column {
+          float: left;
+          width: 50%;
+          padding: 10px;
+        }
+        
+        .column img {
+          margin-top: 12px;
+        }
+        
+        /* Clear floats after the columns */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+</style>
+
+<div class="row">
+    {% for i in (1..page.num_cols) %}
+        <div class="column">
+            {% for j in (1..page.images_per_col) %} 
+                {% assign pic_id =  i | minus: 1 | times: page.images_per_col | plus:  j %}
+                <img src="pictures/{{ pic_id }}.jpg" width="100%"/>
+            {% endfor %}
+        </div>
+    {% endfor %}
+</div> 
