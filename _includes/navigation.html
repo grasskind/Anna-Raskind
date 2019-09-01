@@ -4,17 +4,18 @@
 </head>
 
 <div class="topnav" id="myTopnav">
-    <a href="index.html" {% if page.title == "Home" %} class="active" {% endif %} id = "home-link">
-      Home
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
     </a>
+  <a href="index.html" {% if page.title == "Home" %} class="active" {% endif %} id = "home-link">
+    Home
+  </a>
   {% for item in site.data.navigation %}
     <a href="{{ item.link }}" {% if page.url contains item.link %} class="active"{% endif %}>
       {{ item.name }}
     </a>
   {% endfor %}
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
+
 </div>
 
 <script>
