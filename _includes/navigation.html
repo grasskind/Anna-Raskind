@@ -1,9 +1,26 @@
-<ul class = "navigation-bar">
-    {% for item in site.data.navigation %}
-      <li class="navigation-list"></li>
-        <a href="{{ item.link }}" {% if page.url contains item.link or (item.link == "index.html" and page.title == "Home") %}style="color: black;"{% endif %} class = "navigation-link">
-          {{ item.name }}
-        </a>
-      </li>
-    {% endfor %}
-    </ul>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<div class="topnav" id="myTopnav">
+  {% for item in site.data.navigation %}
+    <a href="{{ item.link }}" {% if page.url contains item.link or (item.link == "index.html" and page.title == "Home") %}class="active"{% endif %}>
+      {{ item.name }}
+    </a>
+  {% endfor %}
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
