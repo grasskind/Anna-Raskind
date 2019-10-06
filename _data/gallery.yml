@@ -1,0 +1,4 @@
+- name: Fog
+  ref: "albums/fog/pictures/34.jpg"
+  link: "albums/fog"
+  description: "Fog of the Midwest"

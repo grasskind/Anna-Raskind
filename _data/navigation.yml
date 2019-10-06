@@ -1,9 +1,9 @@
 - name: Gallery
-  link: gallery.html
+  link: /gallery.html
 - name: About
-  link: about.html
+  link: /about.html
 - name: Pricing
-  link: pricing.html
+  link: /pricing.html
 - name: Contact
-  link: contact.html
+  link: /contact.html
 
