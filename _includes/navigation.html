@@ -8,7 +8,7 @@
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars"></i>
     </a>
-  <a href="index.html" {% if page.title == "Home" %} class="active" {% endif %} id = "home-link">
+  <a href="{{ root }}" {% if page.title == "Home" %} class="active" {% endif %} id = "home-link">
     Home
   </a>
   {% for item in site.data.navigation %}
