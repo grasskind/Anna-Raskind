@@ -1,6 +1,6 @@
 <!doctype html>
-<!-- {% assign root = "/" %} -->
 {% assign root = "/anitim-photography/" %}
+{% comment %} {% assign root = "/" %} {% endcomment %}
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
     <meta charset="utf-8">
@@ -29,7 +29,7 @@
 
       <section>
         <div id="title">
-          <h1>{{ site.title | default: site.github.repository_name }}</h1>
+          <h1 style="font-style: italic; font-family: 'Brush Script MT', cursive; font-size: 72px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;">{{ site.title | default: site.github.repository_name }}</h1>
           <p>{{ site.description | default: site.github.project_tagline }}</p>
           <hr>
         </div>
