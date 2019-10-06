@@ -1,3 +1,4 @@
+{% assign root = "/anitim-photography/" %}
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -11,7 +12,7 @@
     Home
   </a>
   {% for item in site.data.navigation %}
-    <a href="{{ item.link }}" {% if page.url contains item.link %} class="active"{% endif %}>
+    <a href="{{ root }}{{ item.link }}" {% if page.url contains item.link %} class="active"{% endif %}>
       {{ item.name }}
     </a>
   {% endfor %}
