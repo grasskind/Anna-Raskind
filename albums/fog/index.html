@@ -44,8 +44,10 @@ num_cols: 2
         <div class="column">
             {% for j in (1..page.images_per_col) %} 
                 {% assign pic_id =  i | minus: 1 | times: page.images_per_col | plus:  j %}
-                <img src="pictures/{{ pic_id }}.jpg" width="100%"/>
+                <a href="pictures/{{ pic_id }}.jpg">
+                  <img src="pictures/{{ pic_id }}.jpg" alt="Fog album picture" width="100%"/>
+                </a>
             {% endfor %}
         </div>
     {% endfor %}
-</div> 
+</div>
